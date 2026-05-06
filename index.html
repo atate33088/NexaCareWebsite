@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaCare – Home Care Ireland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="22" cy="22" r="22" fill="#0a7c5c"/>
+          <path d="M22 10 C14 10 10 15 10 21 C10 29 22 36 22 36 C22 36 34 29 34 21 C34 15 30 10 22 10Z" fill="white" opacity="0.15"/>
+          <path d="M19 22 H25 M22 19 V25" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Nexa<strong>Care</strong></span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#hiring" class="nav-cta">We're Hiring</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Trusted Home Care · Ireland</span>
+      <h1>Compassionate Care,<br/>Right at Home</h1>
+      <p class="hero-sub">NexaCare provides professional, person-centred home care services across Ireland — supporting individuals and families with dignity and warmth.</p>
+      <div class="hero-actions">
+        <a href="#request-care" class="btn btn-primary">Request Care</a>
+        <a href="#hiring" class="btn btn-outline">Join Our Team</a>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f5f9f7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label">About Us</div>
+      <h2>Care you can count on</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="icon">🏠</div>
+          <h3>Home Support</h3>
+          <p>Personal care, household tasks, meal preparation, and companionship — tailored to each client's needs.</p>
+        </div>
+        <div class="about-card">
+          <div class="icon">🩺</div>
+          <h3>Healthcare Professionals</h3>
+          <p>All our carers are fully vetted, Garda-cleared, and hold recognised Irish qualifications in healthcare.</p>
+        </div>
+        <div class="about-card">
+          <div class="icon">🤝</div>
+          <h3>Family Partnership</h3>
+          <p>We work closely with families to design flexible care plans that bring peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <div class="section-label">Get in Touch</div>
+      <h2>Contact Us</h2>
+      <div class="contact-cards">
+        <a href="tel:+35312345678" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <div>
+            <strong>Phone</strong>
+            <span>+353 1 234 5678</span>
+          </div>
+        </a>
+        <a href="mailto:info@nexacare.ie" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <span>info@nexacare.ie</span>
+          </div>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Address</strong>
+            <span>Dublin, Ireland</span>
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">🕐</span>
+          <div>
+            <strong>Hours</strong>
+            <span>Mon–Fri, 8am–6pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST CARE -->
+  <section id="request-care" class="form-section">
+    <div class="container form-container">
+      <div class="form-badge care">New Clients</div>
+      <h2>Request Care</h2>
+      <p class="form-intro">Tell us about your care needs and we'll be in touch within one working day.</p>
+      <form id="care-form" name="care-request" method="POST" data-netlify="true" novalidate>
+        <input type="hidden" name="form-name" value="care-request" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="care-name">Full Name *</label>
+            <input type="text" id="care-name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="care-phone">Phone Number *</label>
+            <input type="tel" id="care-phone" name="phone" required placeholder="+353 …" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="care-email">Email Address</label>
+          <input type="email" id="care-email" name="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="care-location">Location / County *</label>
+            <input type="text" id="care-location" name="location" required placeholder="e.g. Dublin, Cork …" />
+          </div>
+          <div class="form-group">
+            <label for="care-type">Type of Care Needed</label>
+            <select id="care-type" name="care_type">
+              <option value="">Please select</option>
+              <option>Personal Care</option>
+              <option>Companionship</option>
+              <option>Domestic Support</option>
+              <option>Post-Hospital Care</option>
+              <option>Dementia Care</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="care-message">Additional Information</label>
+          <textarea id="care-message" name="message" rows="4" placeholder="Tell us about the person needing care, preferred hours, any specific requirements…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Care Request</button>
+        <div class="form-success" id="care-success">Thank you! We'll be in touch within one working day.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- WE'RE HIRING -->
+  <section id="hiring" class="form-section hiring-bg">
+    <div class="container form-container">
+      <div class="form-badge hiring">We're Hiring</div>
+      <h2>Join the NexaCare Team</h2>
+      <p class="form-intro">We're growing and looking for compassionate, qualified carers across Ireland. Apply below and we'll be in touch.</p>
+
+      <div class="perks">
+        <span>✅ Competitive pay</span>
+        <span>✅ Flexible hours</span>
+        <span>✅ Ongoing training</span>
+        <span>✅ Supportive team</span>
+      </div>
+
+      <form id="hiring-form" name="job-application" method="POST" data-netlify="true" novalidate>
+        <input type="hidden" name="form-name" value="job-application" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="hire-name">Full Name *</label>
+            <input type="text" id="hire-name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="hire-phone">Phone Number *</label>
+            <input type="tel" id="hire-phone" name="phone" required placeholder="+353 …" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hire-email">Email Address *</label>
+          <input type="email" id="hire-email" name="email" required placeholder="your@email.com" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="hire-location">Location / County *</label>
+            <input type="text" id="hire-location" name="location" required placeholder="e.g. Dublin, Cork …" />
+          </div>
+          <div class="form-group">
+            <label for="hire-experience">Years of Care Experience</label>
+            <select id="hire-experience" name="experience">
+              <option value="">Please select</option>
+              <option>No experience (willing to train)</option>
+              <option>Less than 1 year</option>
+              <option>1–3 years</option>
+              <option>3–5 years</option>
+              <option>5+ years</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hire-qualifications">Qualifications / Certifications</label>
+          <input type="text" id="hire-qualifications" name="qualifications" placeholder="e.g. QQI Level 5, First Aid …" />
+        </div>
+        <div class="form-group">
+          <label for="hire-message">Tell Us About Yourself</label>
+          <textarea id="hire-message" name="message" rows="4" placeholder="Why do you want to work in home care? Any relevant experience or skills…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-hiring btn-full">Submit Application</button>
+        <div class="form-success" id="hire-success">Thank you for applying! We'll review your application and be in touch soon.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="logo logo-sm">
+        <svg width="32" height="32" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="22" cy="22" r="22" fill="#0a7c5c"/>
+          <path d="M19 22 H25 M22 19 V25" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Nexa<strong>Care</strong></span>
+      </div>
+      <p>© 2026 NexaCare. All rights reserved. | Dublin, Ireland</p>
+      <p><a href="mailto:info@nexacare.ie">info@nexacare.ie</a> · <a href="tel:+35312345678">+353 1 234 5678</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

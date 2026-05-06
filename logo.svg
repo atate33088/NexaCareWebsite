@@ -1,0 +1,14 @@
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+
+  <g transform="translate(50,60)" fill="none" stroke="#2E73B8" stroke-width="3">
+    <path d="M0,-20 C -10,-32 -30,-32 -30,-10 C -30,4 -14,8 0,-4"/>
+    <path d="M20,0 C 32,-10 32,-30 10,-30 C -4,-30 -8,-14 4,0"/>
+    <path d="M0,20 C 10,32 30,32 30,10 C 30,-4 14,-8 0,4"/>
+    <path d="M-20,0 C -32,10 -32,30 -10,30 C 4,30 8,14 -4,0"/>
+  </g>
+
+  <text x="100" y="70" font-family="Montserrat, Arial" font-size="42" font-weight="600">
+    <tspan fill="#F2B705">Nexa</tspan><tspan fill="#2E73B8">Care</tspan>
+  </text>
+
+</svg>
